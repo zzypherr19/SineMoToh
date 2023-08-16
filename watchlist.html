@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="watchlist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Watchlist</title>
+</head>
+<body>
+	<div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href=index.html class="logo">SineMoToh</a>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    
+                    <a href=movies.html>  <li class="menu-list-item"><i class="fa-solid fa-film"></i> Movies</li> </a>   
+                    <a href=tv.html> <li class="menu-list-item"><i class="fa-solid fa-tv"></i> TV Series</li> </a>
+                    <a href=watchlist.html> <li class="menu-list-item"><i class="fa-solid fa-bookmark"></i> Watchlist</li> </a>
+                </ul>
+                <ul class="mobile-menu-list">
+                  <li class="mobile-icons"><a href=movies.html> <i class="fa-solid fa-film"></i></a> 
+                  <li class="mobile-icons"><a href=tv.html><i class="fa-solid fa-tv"></i> </a></li>
+                <li class="mobile-icons"><a href=watchlist.html><i class="fa-solid fa-bookmark"></i> </a></li>      
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                     
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron text-light" style="background-color: #ff6f16">
+        <h1>Watchlist</h1>
+        <p>Find your saved movies here</p>
+    </div>
+    <br> <br> 
+    
+ <div class="background">   
+<div class="container">
+<div class="row">
+	<div class="col-lg-12">
+		<div class="main-box clearfix">
+			<div class="table-responsive">
+				<table class="table user-list">
+					<thead>
+						<tr>
+							<th><span>Title</span></th>
+							<th><span>Date Added</span></th>
+							<th class="text-center"><span>Status</span></th>
+							<th><span>Genre</span></th>
+							<th>&nbsp;</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								<a href="#" class="user-link">Avatar: The Last Air Bender</a>
+							</td>
+							<td>
+								2013/08/08
+							</td>
+							<td class="text-center">
+								<span class="label label-default">Plan to Watch</span>
+							</td>
+							<td>
+								<a href="#">Action, Adventure</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+								<a href="#" class="user-link">Wednesday</a>
+								
+							</td>
+							<td>
+								2013/08/12
+							</td>
+							<td class="text-center">
+								<span class="label label-success">Active</span>
+							</td>
+							<td>
+								<a href="#">marlon@brando.com</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+								<a href="#" class="user-link">Ryan Gossling</a>
+								<span class="user-subhead">Registered</span>
+							</td>
+							<td>
+								2013/03/03
+							</td>
+							<td class="text-center">
+								<span class="label label-danger">Banned</span>
+							</td>
+							<td>
+								<a href="#">jack@nicholson</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="">
+								<a href="#" class="user-link">Emma Watson</a>
+								<span class="user-subhead">Registered</span>
+							</td>
+							<td>
+								2004/01/24
+							</td>
+							<td class="text-center">
+								<span class="label label-warning">Pending</span>
+							</td>
+							<td>
+								<a href="#">humphrey@bogart.com</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="">
+								<a href="#" class="user-link">Robert Downey Jr.</a>
+								<span class="user-subhead">Admin</span>
+							</td>
+							<td>
+								2013/12/31
+							</td>
+							<td class="text-center">
+								<span class="label label-success">Active</span>
+							</td>
+							<td>
+								<a href="#">spencer@tracy</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+								<a href="#" class="user-link">Mila Kunis</a>
+								<span class="user-subhead">Admin</span>
+							</td>
+							<td>
+								2013/08/08
+							</td>
+							<td class="text-center">
+								<span class="label label-default">Inactive</span>
+							</td>
+							<td>
+								<a href="#">mila@kunis.com</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+								<a href="#" class="user-link">George Clooney</a>
+								<span class="user-subhead">Member</span>
+							</td>
+							<td>
+								2013/08/12
+							</td>
+							<td class="text-center">
+								<span class="label label-success">Active</span>
+							</td>
+							<td>
+								<a href="#">marlon@brando.com</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								<a href="#" class="user-link">Ryan Gossling</a>
+								<span class="user-subhead">Registered</span>
+							</td>
+							<td>
+								2013/03/03
+							</td>
+							<td class="text-center">
+								<span class="label label-danger">Banned</span>
+							</td>
+							<td>
+								<a href="#">jack@nicholson</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								<a href="#" class="user-link">Emma Watson</a>
+								<span class="user-subhead">Registered</span>
+							</td>
+							<td>
+								2004/01/24
+							</td>
+							<td class="text-center">
+								<span class="label label-warning">Pending</span>
+							</td>
+							<td>
+								<a href="#">humphrey@bogart.com</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+								<a href="#" class="user-link">Robert Downey Jr.</a>
+								<span class="user-subhead">Admin</span>
+							</td>
+							<td>
+								2013/12/31
+							</td>
+							<td class="text-center">
+								<span class="label label-success">Active</span>
+							</td>
+							<td>
+								<a href="#">spencer@tracy</a>
+							</td>
+							<td style="width: 20%;">
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="#" class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+  
+  
+</body>
+</html>

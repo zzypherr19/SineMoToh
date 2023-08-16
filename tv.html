@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TV Series</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tv.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl Carousel css-->
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-container">
+        <div class="logo-container">
+            <a href=index.html class="logo"> SineMoToh</a>
+        </div>
+        <div class="menu-container">
+            <ul class="menu-list">
+                
+                <a href=movies.html>  <li class="menu-list-item"><i class="fa-solid fa-film"></i> Movies</li> </a>   
+                <a href=tv.html> <li class="menu-list-item"><i class="fa-solid fa-tv"></i> TV Series</li> </a>
+                <a href=watchlist.html> <li class="menu-list-item"><i class="fa-solid fa-bookmark"></i> Watchlist</li> </a>
+            </ul>
+            <ul class="mobile-menu-list">
+              <li class="mobile-icons"><a href=movies.html> <i class="fa-solid fa-film"></i></a> 
+              <li class="mobile-icons"><a href=tv.html><i class="fa-solid fa-tv"></i> </a></li>
+              <li class="mobile-icons"><a href=watchlist.html><i class="fa-solid fa-bookmark"></i> </a></li>
+              
+            </ul>
+        </div>
+        <div class="profile-container">
+            <img class="profile-picture" src="img/profile.jpg" alt="">
+            
+            
+        </div>
+    </div>
+</div>
+
+    
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+<div class ="banner">
+  <img src = "img/tvseries.png" class="bannerimage"> 
+</div>
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Recommended TV Series</h2>
+        
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <a href=friends.html target="_self">
+            <div class="imgBox">
+              <img src="img/25.webp" alt="">
+              
+            </div>
+          </a>
+            
+            <div class="text">
+              <h3>Friends</h3>
+              <div class="time flex">
+                <span>24 Mins • 10 Seasons</span>
+                <i class="fas fa-circle"></i>
+                <a>Comedy,Romance</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href=B99.html target="_self">
+            <div class="imgBox">
+              <img src="img/26.jfif" alt="">
+              
+              
+            </div>
+          </a>
+            
+            <div class="text">
+              <h3>Brooklyn Nine-Nine</h3>
+              <div class="time flex">
+                <span>24 Mins • 8 Seasons</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Comedy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href=modernfamily.html target="_self">
+            <div class="imgBox">
+              <img src="img/27.jpg" alt="">
+             
+            </div>
+          </a>
+            
+            <div class="text">
+              <h3>Modern Family</h3>
+              <div class="time flex">
+                <span>24 mins • 11 seasons</span>
+                <i class="fas fa-circle"></i>
+                <a>Comedy,Family</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href=theoffice.html target="_self">
+            <div class="imgBox">
+              <img src="img/28.jpg" alt="">
+              
+            </div>
+          </a>
+          
+            <div class="text">
+              <h3>The Office</h3>
+              <div class="time flex">
+                <span>24 mins • 9 seasons</span>
+                <i class="fas fa-circle"></i>
+                <a>Comedy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href=thegoodplace.html target="_self">
+              <img src="img/29.jpg" alt="">
+             
+            </div>
+          </a>
+            
+            <div class="text">
+              <h3>The Good Place </h3>
+              <div class="time flex">
+                <span>65 minutes • 4 seaons</span>
+                <i class="fas fa-circle"></i>
+                <a>Drama</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href=anne.html target="_blank">
+              <img src="img/30.jpg" alt="">
+            
+            </div>
+          </a>
+            
+            <div class="text">
+              <h3>Anne with an E</h3>
+              <div class="time flex">
+                <span>24 mins • 3 Seasons</span>
+                <i class="fas fa-circle"></i>
+                <a>Drama</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href=thecrown.html target="_blank">
+            <div class="imgBox">
+              <img src="img/31.jpg" alt="">
+            </div>
+            </a>
+            <div class="text">
+              <h3>The Crown</h3>
+              <div class="time flex">
+                <span>65 mins • 4 seasons</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Thriller</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Most Viewed</h2>
+
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <a href=TheUmbrellaAcademy.html target="_self"> 
+            <div class="imgBox">
+              <img src="img/32.webp" alt="">
+            
+            </div>
+          </a>
+           
+            <div class="text">
+              <h3>The Umbrella Academy</h3>
+              <div class="time flex">
+                <span>57 mins • 4 seasons</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Drama</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href=StrangerThings.html target="_self"> 
+            <div class="imgBox">
+              <img src="img/33.jpg" alt="">
+             
+            </div>
+          </a>
+            
+            <div class="text">
+              <h3>Stranger things</h3>
+              <div class="time flex">
+                <span>65 mins • 4 seasons</span>
+                <i class="fas fa-circle"></i>
+                <a>Sci-fi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href=wednesday.html target="_self"> 
+            <div class="imgBox">
+              <img src="img/34.jpg" alt="">
+              
+            </div>
+          </a>
+           
+            <div class="text">
+              <h3>Wednesday</h3>
+              <div class="time flex">
+                <span>67 mins • 1 Season</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href=bojack.html target="_self"> 
+            <div class="imgBox">
+              <img src="img/35.jpg" alt="">
+              
+            </div>
+          </a>
+
+            
+            <div class="text">
+              <h3>Bojack Horseman</h3>
+              <div class="time flex">
+                <span>24 mins • 6 seaons</span>
+                <i class="fas fa-circle"></i>
+                <a>Animation,Drama</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href=GameofThrones.html target="_self"> 
+            <div class="imgBox">
+              <img src="img/36.jpg" alt="">
+             
+            </div>
+          </a>
+           
+            <div class="text">
+              <h3>Game of Thrones </h3>
+              <div class="time flex">
+                <span>82 mins • 8 Seaons</span>
+                <i class="fas fa-circle"></i>
+                <a>Action,Fantasy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+ 
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        375:{
+          items: 1
+        },
+        1250:{
+          items: 3
+        },
+        1500:{
+          items: 4
+        }, 
+        50:{
+          items: 1
+        }
+       
+      }
+    })
+  </script>
+
+  <section class="new_realase top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="img/37.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW RELEASE</h2>
+              <h1>ALICE IN BORDERLAND</h1>
+            </div>
+            <div class="time flex">
+              <span>60 mins  •  2 Seasons</span>
+              <i class="fas fa-circle"></i>
+              <p>2020</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="button flex">
+          
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="img/38.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <h1>1899</h1>
+            </div>
+            <div class="time flex">      
+              <span>60 mins • 1 season</span>
+              <i class="fas fa-circle"></i>
+              <p>2021</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="button flex">
+              
+            </div>
+          </div>
+        </div>          
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: true,
+      items: 1
+    })
+  </script>
+
+<section class="popular mtop">
+  <div class="container ">
+    <div class="heading flex1">
+      <h2>Crime Thrillers</h2>
+
+    </div>
+
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="box">
+          <a href=BreakingBad.html target="_self"> 
+          <div class="imgBox">
+            <img src="image/p7.jpg" alt="">
+            
+          </div>
+        </a>
+          <div class="text">
+            <h3>Breaking Bad</h3>
+            <div class="time flex">
+              <span>58 mins • 5 seasons </span>
+              <i class="fas fa-circle"></i>
+              <a>Crime</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="box">
+          <a href=dahmer.html target="_self"> 
+          <div class="imgBox">
+            <img src="image/p6.jpg" alt="">
+            
+          </div>
+        </a>
+         
+          <div class="text">
+            <h3>DAHMER</h3>
+            <div class="time flex">
+              <span>50 mins • 1 season </span>
+              <i class="fas fa-circle"></i>
+              <a>Crime</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="box">
+          <a href=sherlock.html target="_self"> 
+          <div class="imgBox">
+            <img src="image/p5.jpg" alt="">
+           
+          </div>
+</a>
+          
+          <div class="text">
+            <h3> Sherlock</h3>
+            <div class="time flex">
+              <span>1hr 28 mins • 4 seasons</span>
+              <i class="fas fa-circle"></i>
+              <a>Crime</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="box">
+          <a href=You.html target="_self"> 
+          <div class="imgBox">
+            <img src="image/p4.jpg" alt="">
+            
+          </div>
+    </a>
+          
+          <div class="text">
+            <h3>You</h3>
+            <div class="time flex">
+              <span>48 mins • 4 seasons</span>
+              <i class="fas fa-circle"></i>
+              <a>Crime</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="box">
+          <a href=lucifer.html target="_self"> 
+          <div class="imgBox">
+            <img src="image/p3.jpg" alt="">
+            
+          </div>
+</a>
+          
+          <div class="text">
+            <h3>Lucifer </h3>
+            <div class="time flex">
+              <span>42 mins • 6 seasons</span>
+              <i class="fas fa-circle"></i>
+              <a>Crime</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        375:{
+          items: 1
+        },
+        1250:{
+          items: 3
+        },
+        1500:{
+          items: 4
+        },
+        50:{
+          items: 1
+        }
+        
+      }
+    })
+  </script>
+
+ $nbsp  $nbsp $nbsp $nbsp $nbsp $nbsp $nbsp
+  
+</body>
+
+</html>

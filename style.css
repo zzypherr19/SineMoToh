@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Sen:wght@400;700;800&display=swap');
+
+
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  z-index: 1;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  list-style: none;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+  z-index: 2;
+  
+}
+
+.logo-container {
+  color: #ff6f16;
+  font-family: "Sen", sans-serif;
+  font-size: 20px;
+  flex: 2;
+  }
+
+  .logo {
+    font-size: 20px;
+    color: #ff6f16;
+    font-family: "Sen", sans-serif;
+  }
+
+  .menu-container {
+    flex: 8;  
+  }
+
+  .menu-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10 10 10 10px;
+  
+  }
+
+  .menu-list-item{
+    padding-right: 10px;
+    padding-left: 10px; 
+    list-style: none;
+  }
+
+  .menu-list > a:hover{
+    color:#ff6f16;
+    background-color: #151515;
+    
+    border-radius: 20px;
+  }
+  .mobile-menu-list{ 
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  @media (min-width: 767px) {
+    .mobile-menu-list{
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .menu-list{
+      display: none;
+    }
+    .mobile-icons{
+      display: inline;
+      padding-right: 20px;
+      padding-left: 15px;
+    }
+  }
+
+  
+  .mobile-icons{
+    display: inline;
+    padding-right: 0px;
+    padding-left: 15px;
+  }
+  
+  .mobile-icons > a:hover{
+    color:#ff6f16;
+    background-color: #151515;
+    border-radius: 20px;
+  }
+
+  .profile-container {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: normal;
+    color:white;
+    font-family: "Sen", sans-serif;
+  
+  }
+  
+  
+
+
+
+
+
+
+
+
+.container-fluid {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  
+  width: 100%;
+}
+
+.content-container{
+  padding: 0px;
+}
+
+
+.featured-content {
+  height: 90vh;
+  padding: 50px;
+  align-items: center;
+  
+}
+
+.img-fluid {
+  width: 500px;
+  margin-top:370px;
+}
+
+.featured-title2 {
+  width: 500px;
+  margin-top:280px;
+  margin-left: 25px;
+}
+
+
+.featured-desc {
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0;
+  font-family: "Lato";
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.featured-desc2 {
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0;
+  font-family: "Lato";
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+.featured-button {
+  background-color: #ff6f16;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  outline: none;  
+  font-family: "Lato";
+  margin-bottom: 50px;
+}
+
+.featured-button2 {
+  background-color: #ff6f16;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: "Lato";
+  margin-left: 25px;
+}
+
+.movie-list-container {
+  padding-top: 150px;
+  padding-left: 25px;
+}
+
+.movie-list-container2 {
+  padding: 0 20px;
+}
+
+.movie-list-wrapper {
+  position: relative;
+  
+  margin-left:30px;
+  margin-bottom: 10px
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.movie-list-item-title {
+  padding: 0 10px;
+  font-size: 25px;
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+  color: white;
+  
+}
+
+.movie-list-item-desc {
+  color:white;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button {
+  padding: 10px;
+  background-color: #4dbf00;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.movie-list-title{
+  color: #ff6f16;
+  margin-left:30px;
+  font-size: 40px;
+  font-family: "Lato";
+}
+.movie-list-title2{
+  color: #ff6f16;
+  margin-left:30px;
+  font-size: 40px;
+  font-family: "Lato";
+}
+
+.container.active {
+  background-color: white;
+}
+
+.movie-list-title.active {
+  color: black;
+}
+
+.navbar-container.active {
+  background-color: white;
+
+  color: black;
+}
+
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+
+
+.featured-content2{
+  height: 80vh;
+  padding: 25px;
+  margin-top: 200px;
+}
+
+@media only screen and (max-width: 700px){
+  .featured-desc{
+      font-size: 12px;
+      margin: 30px 0;
+      width: 300px;
+  }
+  
+  .featured-button{
+    background-color: #ff6f16;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;  
+    font-family: "Lato";
+    margin-bottom: 50px;
+    font-size: 12px;
+    width: 120px;
+    height: 40px;
+  }
+  .movie-list-title{
+    color: #ff6f16;
+    margin-left:30px;
+    font-size: 25px;
+    font-family: "Lato";
+  }
+  .movie-list-title2{
+    color: #ff6f16;
+    margin-left:30px;
+    font-size: 25px;
+    font-family: "Lato";
+  }
+  .img-fluid{
+  width: 65%;
+  }
+  
+  
+}
+
+
+

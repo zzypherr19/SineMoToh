@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Movies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="movies.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl Carousel css-->
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-container">
+        <div class="logo-container">
+            <a href=index.html class="logo">SineMoToh</a>
+        </div>
+        <div class="menu-container">
+            <ul class="menu-list">
+                
+                <a href=movies.html>  <li class="menu-list-item"><i class="fa-solid fa-film"></i> Movies</li> </a>   
+                <a href=tv.html> <li class="menu-list-item"><i class="fa-solid fa-tv"></i> TV Series</li> </a>
+                <a href=watchlist.html> <li class="menu-list-item"><i class="fa-solid fa-bookmark"></i> Watchlist</li> </a>
+            </ul>
+            <ul class="mobile-menu-list">
+              <li class="mobile-icons"><a href=movies.html> <i class="fa-solid fa-film"></i></a> 
+              <li class="mobile-icons"><a href=tv.html><i class="fa-solid fa-tv"></i> </a></li>
+              <li class="mobile-icons"><a href=watchlist.html><i class="fa-solid fa-bookmark"></i> </a></li>
+              
+            </ul>
+        </div>
+        <div class="profile-container">
+            <img class="profile-picture" src="img/profile.jpg" alt="">
+            
+            
+        </div>
+    </div>
+</div>
+ 
+<div class ="banner">
+  <img src = "img/moviestitle.png" class="bannerimage"> 
+</div>
+    
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Recommended</h2>
+        
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <a href=joker.html target="_blank">
+            <div class="imgBox">
+              <img src="img/joker.jpg" alt="">
+            </div>
+          </a>
+            <div class="text">
+              <h3>Joker (2019)</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Thriller</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href=oblivion.html target="_blank">
+            <div class="imgBox">
+              <img src="img/8.jpg" alt="">
+            </div>
+          </a>
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Oblivion</h3>
+              <div class="time flex">
+                <span>1hr 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Sci-Fi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href="the_menu.html" target="_blank">
+            <div class="imgBox">
+              <img src="img/44.jfif" alt="">
+            </div>
+          </a>
+
+            <div class="text">
+              <h3>The Menu</h3>
+              <div class="time flex">
+                <span>2hrs 10mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Thriller,Drama</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <a href="crawdads.html" target="_blank">
+            <div class="imgBox">
+              <img src="img//crawdad.jpg" alt="">
+            </div>
+          </a>
+
+            <div class="text">
+              <h3>Where the Crawdads Sing</h3>
+              <div class="time flex">
+                <span>2hrs 5mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Mystery,Fiction</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href="whitechicks.html" target="_blank">
+              <img src="img/whitechicks.jfif" alt="">
+             
+            </div>
+
+    
+            <div class="text">
+              <h3>White Chicks</h3>
+              <div class="time flex">
+                <span>1hrs 49mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Comedy,Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href="dune.html" target="_blank">
+              <img src="img/dune.jpeg" alt="">
+              
+            </div>
+          </a>
+
+            
+            <div class="text">
+              <h3>Dune</h3>
+              <div class="time flex">
+                <span>1hr 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Fantasy, Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href="littlewomen.html" target="_blank">
+              <img src="img/Little-Women.png" alt="">
+              
+            </div>
+          </a>
+
+            
+            <div class="text">
+              <h3>Little Women(2019)</h3>
+              <div class="time flex">
+                <span>2hrs 15mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Drama, Family</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Most Viewed</h2>
+
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href="eeaao.html" target="_blank">
+              <img src="img/eeaao.webp" alt="">
+              
+            </div>
+          </a>
+
+            
+            <div class="text">
+              <h4>Everything, Everywhere All At Once </h4>
+              <div class="time flex">
+                <span>1hr 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Drama, Fantasy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href="hidden.html" target="_blank">
+              <img src="img/hidden.webp" alt="">
+              
+            </div>
+          </a>
+
+            
+            <div class="text">
+              <h3>Hidden Figures</h3>
+              <div class="time flex">
+                <span>2hrs </span>
+                <i class="fas fa-circle"></i>
+                <a>Action, Drama</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href="mammamia.html" target="_blank">
+              <img src="img/mammamia.jfif" alt="">
+              
+            </div>
+          </a>
+
+           
+            <div class="text">
+              <h3>Mamma Mia!</h3>
+              <div class="time flex">
+                <span>2hrs 15mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Drama, Family</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href="hungergames.html" target="_blank">
+              <img src="img/hungergames.jpeg" alt="">
+              
+            </div>
+          </a>
+
+           
+            <div class="text">
+              <h3>The Hunger Games</h3>
+              <div class="time flex">
+                <span>2hrs 30mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action, Adventure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <a href="endgame.html" target="_blank">
+              <img src="img/avengers.jfif" alt="">
+              
+            </div>
+          </a>
+          
+            
+            <div class="text">
+              <h3>Avengers: Endgame </h3>
+              <div class="time flex">
+                <span>2hrs 55mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action, Fantasy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        375:{
+          items: 1
+        },
+        1250:{
+          items: 3
+        },
+        1500:{
+          items: 4
+        },
+        50:{
+          items: 1
+        }
+        
+      }
+    })
+  </script>
+
+  <section class="new_realase top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="items">
+          <div class="left">
+            <div class="img">
+            
+              <img src="img/uncharted.jfif" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <a href="uncharted.html">
+              <h1>Uncharted </h1>
+            </a>
+            </div>
+            <div class="time flex">
+              <span>1hr 40mins</span>
+              <br> <br>
+              
+              
+            </div>
+            <p>Treasure hunter Victor "Sully" Sullivan recruits street-smart Nathan Drake to help him recover a 500-year-old lost fortune amassed by explorer Ferdinand Magellan. What starts out as a heist soon becomes a globe-trotting, white-knuckle race to reach the prize before the ruthless Santiago Moncada can get his hands on it. If Sully and Nate can decipher the clues and solve one of the world's oldest mysteries, they stand to find $5 billion in treasure -- but only if they can learn to work together.
+            </p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="img/puss.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <a href="boots.html">
+              <h1>Puss in Boots: The Last Wish </h1>
+            </a>
+            </div>
+            <div class="time flex">
+             
+              
+              <span>1 hr 50 mins</span>
+              <br> <br>
+            </div>
+
+            <p>Puss in Boots discovers that his passion for adventure has taken its toll when he learns that he has burnt through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.
+            </p>
+
+            <div class="button flex">
+              
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="img/dont.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <a href="darling.html">
+              <h1>Don't Worry Darling </h1>
+            </a>
+            </div>
+            <div class="time flex">
+            
+              <span>1 hr 50 mins</span>
+              <br> <br>
+            </div>
+
+            <p>In the 1950s, Alice and Jack live in the idealized community of Victory, an experimental company town that houses the men who work on a top-secret project. While the husbands toil away, the wives get to enjoy the beauty, luxury and debauchery of their seemingly perfect paradise. However, when cracks in her idyllic life begin to appear, exposing flashes of something sinister lurking below the surface, Alice can't help but question exactly what she's doing in Victory.
+            </p>
+
+            <div class="button flex">
+              
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="img/blonde.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <a href="blonde.html">
+              <h1>Blonde</h1>
+            </a>
+            </div>
+            <div class="time flex">
+            
+              <span>1 hr 50 mins</span>
+              <br> <br>
+            </div>
+
+            <p>A look at the rise to fame and the epic demise of actress Marilyn Monroe, one of the biggest stars in the world.
+            </p>
+
+            <div class="button flex">
+             
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="img/slumberland.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <a href="slumberland.html">
+              <h1>Slumberland</h1>
+            </a>
+            </div>
+            <div class="time flex">
+              
+              <span>1 hr 35 mins</span>
+              <br> <br>
+            </div>
+
+            <p>A young girl discovers a secret map to the dreamworld of Slumberland, and with the help of an eccentric outlaw, she traverses dreams and flees nightmares, with the hope that she will be able to see her late father again.
+            </p>
+
+            <div class="button flex">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: true,
+      items: 1
+    })
+  </script>
+
+
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Crime Thrillers</h2>
+ 
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p7.jpg" alt="">
+              
+            </div>
+
+            
+            <div class="text">
+              <h3>My Generation</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p6.jpg" alt="">
+              
+            </div>
+
+            
+            <div class="text">
+              <h3>Machine War</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p5.jpg" alt="">
+              
+            </div>
+
+            
+            <div class="text">
+              <h3>Fight for Life</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p4.jpg" alt="">
+             
+            </div>
+
+            
+            <div class="text">
+              <h3>The Warrior Life</h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p3.jpg" alt="">
+              
+            </div>
+
+           
+            <div class="text">
+              <h3>Skull Of Myths </h3>
+              <div class="time flex">
+                <span>1hrs 50mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        },
+        375:{
+          items: 1
+        },
+        1250:{
+          items: 3
+        },
+        1500:{
+          items: 4
+        },
+        50:{
+          items: 1
+        }
+        
+      }
+    })
+  </script>
+
+ $nbsp  $nbsp $nbsp $nbsp $nbsp $nbsp $nbsp
+
+
+
+
+  
+</body>
+
+</html>
